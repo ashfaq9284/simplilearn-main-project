@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>The 7 Biggest Business Challenges </title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-toggler {
+        background-color: black !important;
+    }
+
+    /* navbar */
+    .navbar {
+        height: 90px;
+        margin: -10px 0px;
+
+    }
+
+    .div {
+        background-color: rgb(255, 239, 239) ! important;
+
+    }
+
+    .nav-link {
+        color: rgb(50, 49, 49) ! important;
+        margin: 0px 12px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 0px 15px !important;
+        margin: 0px 12px !important;
+
+    }
+
+    .nav-link:hover {
+        border: 2px solid rgb(239, 227, 227);
+        background-color: rgb(251, 148, 148);
+        color: white !important;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -ms-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .dropdown-item {
+        color: var(--primary) !important;
+        background-color: azure;
+    }
+
+    .imgs {
+        border: 2px solid white;
+        border-radius: 12px;
+        width: 200px;
+        height: 70px !important;
+
+
+    }
+
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+
+    h1:hover {
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    strong {
+        color: beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    strong:hover {
+        color: black;
+        background-color: beige;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer div {
+        flex-basis: 30% !important;
+    }
+
+    footer h2 {
+        letter-spacing: 0.5rem !important;
+        padding: 10px 0px !important;
+        color: gold;
+    }
+
+    footer h2 span {
+        color: white;
+    }
+
+    footer i {
+        padding: 15px 10px !important;
+        cursor: pointer !important;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">The 7 Biggest Business Challenges Every Company Is
+                Facing In 2023 </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>23 November 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p> In this article, we look at the seven biggest challenges businesses will be facing in 2023. We discuss
+                challenges in relation to the economy, supply chains, consumer expectations, digital transformation,
+                cyber
+                security, sustainability, and finding the right talent.</p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/1.webp" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>As a futurist specializing in the intersection of business and technology, it’s my job to look ahead and
+                advise companies on how they can prepare for a rapidly changing world.
+            </p>
+            <p>Here are the seven greatest challenges every company should be ready for in 2023:
+
+            </p>
+            <h3><strong>1. Inflation and Economic Downturn :-</strong></h3>
+            <p>The headlines are already filled with talk of skyrocketing inflation, and that trend will likely continue
+                in 2023. Many economies will stagnate or shrink, and businesses need to prepare for that reality.
+            </p>
+            <p>The Managing Director of the International Monetary Fund (IMF), Kristalina Georgieva, reported that the
+                organization had downgraded its forecast for 2.9 percent global growth in 2023. The IMF cited rising
+                risks of financial instability and recession.
+
+
+            </p>
+            <p>Companies can face inflation by establishing end-to-end, actionable visibility of spending by business
+                process, function, cost category, and business unit, as well as reducing spending. </p>
+
+            <h3><strong>2. Supply Chain Security:-</strong></h3>
+            <p>Supply chain security is another key issue. Challenges began with COVID-related backlogs and have been
+                made worse by Russia's invasion of Ukraine and labor shortages due to the Great Resignation. This has
+                made parts and products harder to obtain, as well as pushed prices up (e.g., energy, grains, computer
+                chips, oil, and so on).</p>
+            <p>According to a report by Accenture, supply chain issues could result in a potential €920 billion
+                cumulative loss to the gross domestic product (GDP) across the Eurozone by 2023.
+
+            </p>
+            <p>Companies should resist the urge to over-order to compensate for backlogs, which could worsen the
+                situation. Instead, focus on long-term recovery and restructure your needs to prevent similar shortages
+                in the future.</p>
+            <h3><strong>3. Increasing Customer Expectations :-</strong></h3>
+            <p>Customers are demanding more immersive customer experiences in the real world as well as in the
+                metaverse.
+
+                Customers entering brick-and-mortar stores aren’t just looking to buy products — they want memorable
+                in-store experiences. If your company has physical shops, consider adding more immersive experiences.
+
+            </p>
+            <p>Online retailers should consider adding extended reality (XR) experiences like virtual dressing rooms
+                that allow customers to “try on” clothing, accessories, and makeup without leaving their homes.
+
+                No matter how you engage with consumers (online, offline, or a mix of both), ask yourself, “How can we
+                add even more value for our customers by turning this interaction into an experience? </p>
+
+            <h3><strong> 4. Accelerated Digital Transformation:-</strong></h3>
+            <p>Artificial intelligence (AI) is already starting to augment all of our businesses, and that trend will
+                continue to accelerate next year. At the same time, other technologies like 5G, blockchain, the cloud,
+                and the Internet of Things (IoT) are building and speeding up AI, and all of them are enhancing each
+                other.
+
+            </p>
+            <p>This is rapidly creating a world of ever-faster technological developments. In response, every business
+                must think of itself as a tech business. Companies need to re-design their processes and ensure their
+                people have the skills needed for a world where we increasingly collaborate with and work alongside
+                capable and intelligent machines.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div>
+            <h2> Artical <span>Place</span></h2>
+            <p>Everything for kids world</p>
+        </div>
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i><br>
+            <P>Design by A K</P>
+
+        </div>
+        <div>
+            <p> @2023 copyright All Rights Reserved </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

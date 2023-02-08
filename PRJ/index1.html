@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <title>Banking In The Metaverse</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-toggler {
+    background-color: black !important;
+}
+
+/* navbar */
+.navbar {
+    height: 90px;
+    margin: -10px 0px;
+
+}
+
+.div {
+    background-color: rgb(255, 239, 239) ! important;
+
+}
+
+.nav-link {
+    color: rgb(50, 49, 49) ! important;
+    margin: 0px 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0px 15px !important;
+    margin: 0px 12px !important;
+
+}
+
+.nav-link:hover {
+    border: 2px solid rgb(239, 227, 227);
+    background-color: rgb(251, 148, 148);
+    color: white !important;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+.dropdown-item {
+    color: var(--primary) !important;
+    background-color: azure;
+}
+
+.imgs {
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 200px;
+    height: 70px !important;
+
+
+}
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+    h1:hover{
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+    strong{
+        color:  beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px ;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+    strong:hover{
+        color:black;
+        background-color:  beige;
+    }
+    hr{
+        width: 100%;
+    }
+    footer{
+    background-color:black  ;
+    color: white;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+footer div{
+    flex-basis: 30% !important;
+}
+footer h2{
+    letter-spacing: 0.5rem !important;
+    padding: 10px 0px !important ;
+    color: gold;
+}
+footer h2 span{
+    color: white;
+}
+footer i{
+    padding: 15px 10px !important;
+    cursor: pointer !important;
+}
+
+
+
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+              <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+              <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-danger"></span>
+              </button>
+              <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Article</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">About </a></li>
+                      <li><a class="dropdown-item" href="#">Books</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+      
+                </ul>
+                <div class="d-flex">
+                  <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login</a>
+                  <a class="nav-link" href="#">Registration</a>
+                </div>
+              
+              </div>
+            </div>
+          </nav>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-auto">
+                      <label for="staticEmail2" class="visually-hidden">Email</label>
+                      <input type="text" class="form-control" id="staticEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="col-auto">
+                      <label for="inputPassword2" class="visually-hidden">Password</label>
+                      <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">Banking In The Metaverse – The Next
+                Frontier For Financial Services </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>24 November 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p>Banks have long known that if they can capture the attention of customers when
+                they are young, they are likely to get hold of them for life. For this reason,
+                they have always been quick to jump on new and emerging trends, and today’s hot
+                tech potato – the metaverse – is certainly no exception.</p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/0.webp" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>Generation Z consumers are fully digital-native – online is the default option
+                for them when they go looking for the products and services they need. The
+                metaverse – persistent, immersive digital environments that potentially offer
+                everything we need to live our lives digitally, under one roof – provides new
+                ways for businesses to connect with customers. Banks, as ever, have been keen to
+                capitalize on it.
+            </p>
+            <p>If you need a bit more information on what the metaverse is, and what it promises
+                for the future, you can take a look at my Easy Explanation for
+                    Anyone article. Otherwise, let’s dive in and take a look at how
+                banks and other financial services organizations are making their mark there:
+            </p>
+            <h3><strong>Virtual Lobbies :-</strong></h3>
+            <p>One of the most obvious uses of the metaverse, as far as retail banks are
+                concerned, is to create “virtual branches” where they can sell banking products
+                to a new breed of digitally-native gen-z consumers, or provide customer service
+                to their existing customers.
+            </p>
+            <p>Emerging metaverse platforms like and Decentraland attract
+                hundreds of thousands of visitors each month, while established gaming platforms
+                with metaverse-like functionality, such as Roblox or Fortnite, can attract
+                millions. Their audiences are digital natives and are keen to do business with
+                companies that share their understanding and enthusiasm for virtual worlds and
+                gaming-style environments.
+            </p>
+            <p>Among those who have been first to set up virtual storefronts is HSBC,
+                which in The Sandbox earlier
+                this year, which it will use to engage with online sports fans and e-sports
+                enthusiasts. It's CMO for the Asia Pacific region, Suresh Balaji said, "At HSBC,
+                we see great potential to create new experiences through emerging platforms,
+                opening up a world of opportunity for our current and future customers and the
+                communities we serve.” Thailand’s Siam Commercial Bank also has a on The Sandbox platform.
+            </p>
+            <p>JP Morgan Chase is another global banking giant that has already established
+                by setting up shop on the
+                Decentraland platform. It created a lounge area called Onyx inside the
+                platform's Metajuku virtual mall, which gives visitors information about
+                blockchain and other technology-driven initiatives that the bank is taking part
+                in. It also features a tiger and a portrait of the company CEO, Jamie Dimon.</p>
+            <p>This trend is actually not as new as it seems, however. Linden Labs’ Second Life
+                is often cited as one of the first metaverse environments, having been in
+                existence since 2003. A few years later, in 2007, Danish investment bank
+                Saxoon the platform,
+                with many of the features that today’s metaverse bankers are building, such as
+                the ability to interact and communicate via avatars.
+            </p>
+            <h3><strong>Bridging the gap between virtual economies and real economies :-</strong></h3>
+            <p>With spending in the metaverse expected to by 2030, it’s big business,
+                and banks are already thinking about the profits that will be made by moving
+                money and perhaps other assets between the digital and physical worlds.</p>
+            <p>Metaverse platforms allow users to buy virtual goods – including sneakers from
+                Nike and clothes from Gucci – to decorate their avatars and their virtual homes.
+                Money can be earned in online play-to-earn games such as Axie Infinity. This usually
+                involves dealing in cryptocurrencies and unique digital assets like.
+                 Transferring this money into the real world
+                involves exchanging it for real currencies, which are paid into a bank account.
+            </p>
+            <p>Startup which calls itself the “bank of the
+                metaverse” – offers regulated services for transferring money between virtual
+                worlds and the real world, as well as trading valuable in-game items between
+                players.</p>
+                <h3><strong>It’s all about image :-</strong></h3>
+                <p>So, is banking in the metaverse just another fad that will die out as consumers
+                    lose interest? Well, with actual physical bank branches closing down at
+                    an it makes sense that
+                    financial institutions may well be looking to the metaverse and virtual worlds
+                    as a way of maintaining connection with customers and providing basic banking
+                    services.</p>
+                <p>It's also clear that virtual economies, and the trade in virtual goods and
+                    services, are set to grow. As today's younger generation of consumers grows up
+                    and wants to bank and engage with financial services in environments they feel
+                    comfortable in, it seems likely that virtual environments will provide a
+                    familiar platform for them to do just that.</p>
+                <p>It's true that no one really knows exactly what the metaverse is yet, much less
+                    what it will look like in five or ten years' time. However, it's clear that
+                    banking and finance feel that it will be an important part of our lives and want
+                    to make sure they are a part of it, too.
+                </p>
+                <p>To stay on top of the latest on new and emerging business and tech trends, make
+                    sure to subscribe to,
+                    which just won the 2022 Business Book of the Year award.
+                </p>
+        </div>
+
+
+
+
+
+    </div>
+
+    <footer>
+
+        <div>
+          <h2> Artical <span>Place</span></h2>
+          <p>Everything his here</p>
+        </div>
+        <div>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-pinterest"></i><br>
+          <P>Design by A K</P>
+    
+        </div>
+        <div>
+          <p> @2023 copyright All Rights Reserved </p>
+        </div>
+    
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

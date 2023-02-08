@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>The Amazing Possibilities Of Healthcare  </title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-toggler {
+        background-color: black !important;
+    }
+
+    /* navbar */
+    .navbar {
+        height: 90px;
+        margin: -10px 0px;
+
+    }
+
+    .div {
+        background-color: rgb(255, 239, 239) ! important;
+
+    }
+
+    .nav-link {
+        color: rgb(50, 49, 49) ! important;
+        margin: 0px 12px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 0px 15px !important;
+        margin: 0px 12px !important;
+
+    }
+
+    .nav-link:hover {
+        border: 2px solid rgb(239, 227, 227);
+        background-color: rgb(251, 148, 148);      
+          color: white !important;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -ms-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .dropdown-item {
+        color: var(--primary) !important;
+        background-color: azure;
+    }
+
+    .imgs {
+        border: 2px solid white;
+        border-radius: 12px;
+        width: 200px;
+        height: 70px !important;
+
+
+    }
+
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+
+    h1:hover {
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    strong {
+        color: beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    strong:hover {
+        color: black;
+        background-color: beige;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer div {
+        flex-basis: 30% !important;
+    }
+
+    footer h2 {
+        letter-spacing: 0.5rem !important;
+        padding: 10px 0px !important;
+        color: gold;
+    }
+
+    footer h2 span {
+        color: white;
+    }
+
+    footer i {
+        padding: 15px 10px !important;
+        cursor: pointer !important;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">The Amazing Possibilities Of Healthcare In The Metaverse </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>7 March 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p> The metaverse is a hot topic at the moment, and much has been written and spoken about its potential to revolutionize gaming, entertainment, socializing, work and commerce. Not so much has been said, however, about how it could affect healthcare – but this is another field where its impact could be transformational.</p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/6.jpg" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>Firstly – for those who are still understandably confused – what is the metaverse? Well, the reason there’s a fair amount of confusion is that no one is quite sure at the moment, as it’s somewhat up in the air. What’s generally agreed on, however, is that it’s effectively the next version of the internet – one that will take advantage of artificial intelligence (AI), augmented reality (AR), virtual reality (VR), and ever-increasing connectivity (for example, 5G networks) to create online environments that are more immersive, experiential and interactive than what we have today.   </p>
+            <p>Metaverse involves the convergence of three major technological trends, which all have the potential to impact healthcare individually. Together, though, they could create entirely new channels for delivering care that have the potential to lower costs and vastly improve patient outcomes. These are telepresence (allowing people to be together virtually, even while we’re apart physically), digital twinning, and blockchain (and its ability to let us create a distributed internet). Let’s take a look at each one of them in turn:
+
+        </p>
+            <h3><strong>Telepresence-</strong></h3>
+            <p>Known in healthcare as telemedicine – the provision of medicine as a remote service. This experienced a surge in popularity during the Covid-19 pandemic. Before 2020, just 43% of healthcare facilities had the ability to provide remote treatment to patients. Today that figure stands at 95%. For routine consultations that don’t require a physical examination (or which can be carried out visually), doctors and nurses have found that they are able to more quickly and efficiently diagnose many of the minor conditions that make up the vast majority of their caseload via a telephone or video call. This will undoubtedly persist in the metaverse. However, virtual reality – a key technology that enables the next-level immersion that partly qualifies a platform or application as part of the metaverse – opens a whole new range of possibilities. Anyone who has tried it will know that headset-based VR experiences convey a far greater sense of “being there” than other virtual environments, such as websites, messaging apps, or social media.
+
+            </p>
+            <p>Telemedicine consultations, particularly through VR, mean patients are no longer limited to being treated by particular clinicians due to their physical location. If you’re in Europe and the best specialist to deal with your particular condition happens to be in India, you can effectively be in the same room simply by putting on headsets. Scans and tests can be carried out at a facility local to you, and the data transferred to the specialist, wherever they are in the world. It’s particularly useful in areas like China where there is an acute shortage of medical professionals, as well as for patients in remote regions who would ordinarily have to travel great distances to be seen by healthcare professionals.
+
+            </p>
+            <p>Another area where it can be particularly beneficial is therapy. Environments can be personalized to individual patients – VR is already used by psychologists and psychiatrists in aversion therapy, where patients can interact with situations that cause them anxiety, in safe environments where every aspect of the interaction can be closely monitored and controlled.</p>
+
+
+            <h3><strong>Digital Twins-</strong></h3>
+            <p>A digital twin is a virtual model, or simulation, of any object, process, or system, generated using real-world data, for the purpose of learning more about its real-world counterpart. In the case of the metaverse, the digital twin could be of the patient themself.
+
+            </p>
+            <p>Jack Latus, CEO of Latus Health – an online healthcare provider specializing in occupational health – believes that digital twins will eventually become “test dummies” for individuals that can be used to predict everything from how we will recover from surgery to the reactions we will have to specific medicines. This will come about through our increasing ability to map and understand individual genetics. During a recent conversation, he told me, "We'll be able to fast-forward – so if we age this twin by ten years, based on these interventions we're doing – how does this affect the twin?
+            </p>
+            <p>“You start to almost be able to see into the future … we'll see that this is the outcome we're going to get if we follow this protocol for the next ten years."</p>
+            <h3><strong>Blockchain Technology -</strong></h3>
+            <p>Known to most as the technology which underpins cryptocurrencies like Bitcoin, blockchains are actually just distributed and encrypted databases that allow data to be stored and transferred securely in a way that no one except the data owner can tamper with. Many people consider them to be an important part of the metaverse concept because they allow for decentralized communities governed democratically via smart contracts, as well as a record of digital “ownership” of environments or even objects in the digital domain.
+            </p>
+            <p>In healthcare, their most obvious use case is in the management and security of our highly valuable health data. At the moment, data is often shared between multiple organizations in a way that's both inefficient and opaque as far as the owners of that data (us) are concerned. The fact that health records are usually stored on centralized servers means that our data is at risk of being stolen (the resale value of a single health record is said to be between $70 and $100 on the dark web). It also means that getting at it, even for those who have a legitimate need to access it – for example, a specialist who is treating us - is often a lengthy and laborious process.
+            </p>
+            <p>As Latus puts it, “It’s clunky … you write to your GP, saying please can I have access to my records, then you have to sign a form, and you might get the records in 28 days, then you have to send them on … with the technology that’s available today that’s just ridiculous … it would be much more sensible for everyone to own their own records on a personal file on a blockchain. It’s unhackable … and with a click of a button, you can give consent to any clinician anywhere in the world to review your records."
+
+            </p>
+            <h3><strong> Convergence-</strong></h3>
+            <p> The convergence of these core technologies in online environments – the metaverse – means healthcare professionals will be able to deliver more joined-up treatment programs and packages, unhindered by the siloed nature of much of the existing healthcare system. Swift information sharing between clinicians would mean that underlying causes of ill health could more quickly be established. Monitoring of patient activity in the metaverse means factors such as compliance could more easily be tracked, which would further assist with diagnosing and treating illness. Latus raises the example of a patient being treated by a physiotherapist for an injured knee.
+            </p>
+            <p>"It looks like a purely physical issue, but if it isn't getting any better, you have to look at the mental effects – why isn't it getting better?"
+            </p>
+            <p>It may turn out that due to depression the patient isn’t completing their rehabilitative exercises, and therefore, the physical injury isn’t going to heal. Offering treatment in a joined-up manner within virtual environments, with a new approach to data sharing, should make treatment of this sort quicker and more effective.
+
+            </p>
+            <h3><strong> Virtual Hospitals-</strong></h3>
+            <p>Another part of his vision that Latus shared for the future of healthcare is around the concept of the “virtual hospital”. This is a project that Latus Healthcare is currently developing and could become available as a service within 12 to 18 months. Essentially it comprises of a virtual reality hospital environment, accessed through a headset, where treatments will at first be focused around counseling and physiotherapy services. Physiotherapy will make use of computer vision – for example, using cameras to investigate the range of motion in damaged joints, as well as the progress that patients are making towards recovery. Latus says, "With VR and AR, we're able to give them much better feedback on their process … for example someone with a shoulder joint issue, if that shoulder range of motion improves by three percent, as an individual, you probably wouldn't feel that.
+
+            </p>
+            <p>“But if you can get it reported back to you, you will actually see it working, and get a plan … if you improve at this rate, you can get back to normal in a certain number of weeks. From a motivation or compliance point of view … that’s going to have a massive effect. You have genuine data to back up the work you’ve been putting in.”
+
+            </p>
+            <p>It’s clear that many aspects of healthcare delivery will be affected by the opportunities offered by the metaverse. There may be some hurdles to be overcome first, particularly around people’s attitudes to receiving treatment online or remotely – which may still be seen as a second-best or backup option by many. There are also questions around equality of access – VR headsets are not cheap, and if they are required in order to take part, it could be seen as further contributing towards inequality in access to healthcare. But these are issues that are likely to be addressed given time if the new generation of digital-first healthcare providers can successfully show that their innovation will lead to reduced cost and improved outcomes for patients.
+
+            </p>
+            <p>You can watch my webinar with Jack Latus, CEO of Latus Health, here:
+
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div>
+            <h2> Artical <span>Place</span></h2>
+            <p>Everything for kids world</p>
+        </div>
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i><br>
+            <P>Design by A K</P>
+
+        </div>
+        <div>
+            <p> @2023 copyright All Rights Reserved </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

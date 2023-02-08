@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Is This The Downfall Of Meta And Social Media As We Know It? </title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-toggler {
+    background-color: black !important;
+}
+
+/* navbar */
+.navbar {
+    height: 90px;
+    margin: -10px 0px;
+
+}
+
+.div {
+    background-color: rgb(255, 239, 239) ! important;
+
+}
+
+.nav-link {
+    color: rgb(50, 49, 49) ! important;
+    margin: 0px 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0px 15px !important;
+    margin: 0px 12px !important;
+
+}
+
+.nav-link:hover {
+    border: 2px solid rgb(239, 227, 227);
+    background-color: rgb(251, 148, 148);
+    color: white !important;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+.dropdown-item {
+    color: var(--primary) !important;
+    background-color: azure;
+}
+
+.imgs {
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 200px;
+    height: 70px !important;
+
+
+}
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+    h1:hover{
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+    strong{
+        color:  beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px ;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+    strong:hover{
+        color:black;
+        background-color:  beige;
+    }
+    hr{
+        width: 100%;
+    }
+    footer{
+    background-color:black  ;
+    color: white;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+footer div{
+    flex-basis: 30% !important;
+}
+footer h2{
+    letter-spacing: 0.5rem !important;
+    padding: 10px 0px !important ;
+    color: gold;
+}
+footer h2 span{
+    color: white;
+}
+footer i{
+    padding: 15px 10px !important;
+    cursor: pointer !important;
+}
+
+
+
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">Is This The Downfall Of Meta And Social Media As We Know It? </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>21 November 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+           <p>Meta Platforms – the company formerly known as Facebook – is cutting its workforce by 13% – equating to a loss of 11,000 jobs. CEO Mark Zuckerberg, who announced the job cuts last week, placed the blame on a combination of slowing user growth thanks to competition and declining ad revenue in the face of a global economic downturn.</p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/2.webp" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>Just a few years ago – although it might feel to many of us like another lifetime – the picture was very different. Shortly before the start of the global Covid-19 pandemic, the company was riding a wave of success that had seen it consistently add at least one hundred million active users every year. Over the course of 2020 alone, as the world settled into lockdown and online activity of all kinds surged, it would add another 300 million. </p>
+            <p>This is the point at which Zuckerberg took a gamble that has yet to pay off – and that many blame for the problems he’s facing now. He decided that this huge growth in the amount of time we spent online would never slow down, instead becoming a catalyst for further growth that would continue throughout the new decade. As it turned out, this wasn’t exactly the way it would play out – for Facebook, at least. In the last 12 months, growth slowed significantly, with the social network adding a little under 50 million active users. </p>
+            <p>For a smaller company, this would still be seen as phenomenal growth. But for a man who told Time magazine back in 2014 that his goal was to connect every human on the planet, it’s a worrying and significant downturn. Evidently, it’s also worrying for his shareholders and investors - the company is currently said to be valued at its lowest level since 2017, reportedly having lost close to $700 billion in value. That’s around 67% of the $1 trillion it was said to be worth at its peak in 2021.
+            </p>
+            <p>So is this dramatic downturn in fortune due to changing macroeconomics, bad bets by its leadership, the emergence of more youthful challengers such as TikTok, some combination of all of these – or something else entirely? Let’s take a look at how all of these factors are affecting a company that famously started in a college dorm, went on to change the face of the internet, and is now part way through an even more ambitious transformation aimed at changing the way we live our lives entirely.
+            </p>
+           
+            <h3><strong>How have we got here?</strong></h3>
+            <p>TFor all of its explosive success, Facebook (and now Meta) has certainly created its fair share of controversies over its almost twenty years of existence. It wasn’t, by any means, the first social network to exist – Friends Reunited, MySpace, LinkedIn, and Hi5 all predated it. But it outgrew all of those by positioning itself as a mainstream communication offering – as ubiquitous as telephone or email – rather than a service for a niche audience, such as youngsters, professionals, or music lovers. Facebook became the world's most popular (by far) social network because grandparents understood it and used it to coo over pictures of babies, as much as musicians used it to publicize gigs, or college kids used it to build connections with new friends they’d met on a night out.
+
+            </p>
+            <p>During its first decade, Facebook grew from a website accessible only by students at a handful of US colleges to a network of 1.4 billion users. Along the road, it transformed socializing from something that’s mostly done interpersonally, between relatively small groups of people, into something done electronically, at a global scale.
+
+            </p>
+            <p>Controversy thrived almost from the start, though. Anyone who has seen the movie The Social Network knows about the allegations that Zuckerberg stole the concept behind the site from fellow Harvard students. That matter was eventually settled in court, and although the exact terms were not made public, it’s been reported that Facebook paid claimants in the region of $65 million.
+            </p>
+            <p>The company also has a poor track record when it comes to treating the personal data people share on the platform with the respect it deserves, which prompted various lawsuits and fines. Back in 2013, Austrian privacy activist Max Schrems successfully sued Facebook over data privacy breaches. In 2018, the Cambridge Analytica scandal broke, accusing Facebook of selling the private information of tens of millions of Americans without their knowledge – leading to a record-breaking $5 billion fine in 2019. More recently, the company was sued for creating and storing face-recognition profiles of millions of users without their permission, leading to a $650 million settlement in 2021</p>
+            <p>However, the most recent controversies surrounding the company have stemmed from its enthusiastic, seemingly all-or-nothing bet on the much-hyped concept of the metaverse.
+            </p>
+            <p>The first seeds of Zuckerberg’s infatuation with the metaverse were sown with Facebook’s acquisition of virtual reality (VR) headset manufacturer Oculus back in 2013. Eight years later, he was ready to unveil his grand scheme in detail. The general idea – creating a "next-generation" of his world-conquering social platform in VR - didn’t come as a complete surprise. Speculators had been suggesting it was a strong possibility since the Oculus acquisition. In many ways, "Facebook but in VR" seemed a natural next step for the world's dominant social network. On the other hand, it’s fair to say that rebranding the entire company as Meta was a step further than many had expected.
+
+            </p>
+             <p>After all, having defined – if not invented – the shape of web2.0, the “user-generated web” with Facebook, it doesn’t seem entirely out-of-the-question that he, and his company, have a shot at defining the next iteration – web3.0, or web3, or the metaverse, or whatever ultimately arbitrary label we end up applying to it.
+            </p>
+            <p>Zuckerberg does not seem to be deterred by the fact that there currently seems to be limited enthusiasm amongst the general public for his plans, despite the $36 billion he has reportedly spent attempting to make it happen. Recently released statistics suggest that less than half of the 500,000 users that were expected to have signed up by now have done so. One report late in 2022 has found that this isn’t simply a case of slow growth as experienced by Facebook itself. Rather, it’s actually becoming less popular – with monthly active users of Meta’s Horizon Worlds having declined from around 300,000 to 200,000 over the course of the year.
+
+            </p>
+            <h3><strong>Where do Meta and Mark Zuckerberg go from here?</strong></h3>
+            <p>So, could we be witnessing the death of Facebook? Or, even more dramatically, as some have suggested, the death of social media itself? Parallels have inevitably been drawn with current goings-on at rival network Twitter, where staff are currently enduring an even more dramatic round of cost-cutting under their new boss, Elon Musk. So far, mere days after completing his acquisition of the platform, Musk has announced plans to sack nearly half of the workforce because of a massive drop in revenue. In the wake of this, users are threatening an exodus of their own, citing concerns that plans for the future of the platform will result in a hostile and unsafe environment.
+
+            </p>
+            <p>In my opinion, this is unlikely to be the end of social media due to one simple fact: We don't yet have anything to replace it with. It's simply unrealistic to think that, whatever happens to the corporations behind Facebook or Twitter, we are going to go back to living the way we did before social media was a part of our lives. For all its faults, it's simply far too convenient and accessible. It's more likely that new social media services will emerge – perhaps solving some of the problems inherent to their predecessors, but in all likelihood bringing new ones with them. After all, radio, television, and newspapers all received blame for causing their own share of societal ills during their heyday in the previous century, just as social media has done in this century. So it’s a safe bet that, whatever comes next, somebody will be upset by it, too.
+            </p>
+            <p>As for the future of Meta, a great deal rests on the question of whether Zuckerberg’s metaverse bet will eventually succeed or fail. Although recent indicators are not great, Zuckerberg and his company still retain control and ownership of the world’s most popular social networking platform and the still-sizeable advertising revenue it generates. Of course, they also have Instagram and the world’s most widely-used messaging app, Whatsapp, which are both wildly successful in their own right. This means that they continue to have significant resources at their disposal, as well as a global workforce that still stands at around 76,000.
+
+            </p>
+            <p>The fact is, though, that no one really knows what the metaverse will look like yet, and Meta’s own offering doesn’t align very well with those who advocate the vision of “web3” as a decentralized, user-owned internet, built on blockchain technology and freed from the centralized control of corporations like Meta or Google. Failure of Meta certainly doesn’t mean failure of the metaverse concept itself. There will still be a next iteration of the internet, or a web 3.0. It just might not look anything like the version of it that Zuckerberg has spent the last year trying to sell us.
+
+            </p>
+            <p>To stay on top of the latest on new and emerging business and tech trends, make sure to subscribe to my newsletter, follow me on Twitter, LinkedIn, and YouTube, and check out my books ‘Tech Trends in Practice’ and ‘Business Trends in Practice, which just won the 2022 Business Book of the Year award.
+
+            </p>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div>
+          <h2> Artical <span>Place</span></h2>
+          <p>Everything for kids world</p>
+        </div>
+        <div>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-pinterest"></i><br>
+          <P>Design by A K</P>
+    
+        </div>
+        <div>
+          <p> @2023 copyright All Rights Reserved </p>
+        </div>
+    
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

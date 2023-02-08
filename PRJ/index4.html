@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>How To Build A Positive Hybrid</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-toggler {
+    background-color: black !important;
+}
+
+/* navbar */
+.navbar {
+    height: 90px;
+    margin: -10px 0px;
+
+}
+
+.div {
+    background-color: rgb(255, 239, 239) ! important;
+
+}
+
+.nav-link {
+    color: rgb(50, 49, 49) ! important;
+    margin: 0px 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0px 15px !important;
+    margin: 0px 12px !important;
+
+}
+
+.nav-link:hover {
+    border: 2px solid rgb(239, 227, 227);
+    background-color: rgb(251, 148, 148);
+        color: white !important;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+.dropdown-item {
+    color: var(--primary) !important;
+    background-color: azure;
+}
+
+.imgs {
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 200px;
+    height: 70px !important;
+
+
+}
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+    h1:hover{
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+    strong{
+        color:  beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px ;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+    strong:hover{
+        color:black;
+        background-color:  beige;
+    }
+    hr{
+        width: 100%;
+    }
+    footer{
+    background-color:black  ;
+    color: white;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+footer div{
+    flex-basis: 30% !important;
+}
+footer h2{
+    letter-spacing: 0.5rem !important;
+    padding: 10px 0px !important ;
+    color: gold;
+}
+footer h2 span{
+    color: white;
+}
+footer i{
+    padding: 15px 10px !important;
+    cursor: pointer !important;
+}
+
+
+
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">How To Build A Positive Hybrid And Remote Working Culture In 2023 </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>16 November 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p>In 2023, building a culture that allows a business and its employees to thrive while working remotely is
+                about more than surviving in the “new normal” or post-pandemic society.</p>
+            <p>Remote and hybrid working may have been thrust upon us due to necessity as cities went into lockdown and
+                office buildings became no-go zones for months or, in some cases, years.</p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/3.webp" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>But we quickly learned that there were many benefits to taking a flexible approach to where and when we
+                work, and perhaps not as many downsides as people at one time feared!
+            </p>
+            <p>Today, forward-thinking organizations aren’t offering hybrid and remote working arrangements to keep
+                their workers safe from viruses, but because it’s been established that it can be beneficial for the
+                business and for employees. And a whole range of technological solutions – including the
+                much-talked-about metaverse – have sprung up to support this widespread behavioral shift.
+            </p>
+            <p>However, that isn’t to say that it isn’t without challenges.</p>
+            <p>Workforces spread across wide geographical areas can encounter difficulties when it comes to
+                communicating and collaborating Employers may find it more difficult to track productivity and understand where bottlenecks are occurring that are slowing down workflows.</p>
+                <p>And home-based workers may find it more difficult to draw a line between work and family life without the delineator of the daily commute to split their day into company time and home time.</p>
+            <h3><strong>What is company culture?</strong></h3>
+            <p>Perhaps one of the biggest changes is the effect that widespread remote and home working has on company culture. Company culture – sometimes called corporate culture or organizational culture - is a tricky thing to define. Exactly what it means often changes dramatically from organization to organization. But to put it in the most simple terms, it’s a shared set of values, experiences, and behaviors that help to unite teams behind a common purpose.
+            </p>
+            <p>Some examples of questions that can help understand a company or organizational culture might include the following:</p>
+                <ul>
+                    <li>Does the company follow a flat or hierarchical management structure?
+                    </li>
+                    <li>How is success measured and rewarded?</li>
+                    <li>How are team members encouraged to communicate and interact with colleagues, customers, and management?
+                    </li>
+                    <li>Are workers expected to follow instructions to the letter or to apply initiative and interpret instructions creatively?</li>
+                    <li>How valued is diversity among the team?</li>
+                    <li>How are employees encouraged to engage in ongoing learning and upskilling?  </li>
+                    <li>Is there a dress code, or are employees allowed to wear whatever they want?</li>
+                    <li>How does the company promote a healthy work/life balance?</li>
+                </ul>
+
+            
+            <p>Clearly, with some of these questions, there isn't always an answer that's right or wrong in every situation. This means that the job of those responsible for fostering and building culture is generally one of achieving balance rather than making decisions one way or the other.
+            </p>
+            
+           
+            <h3><strong>What are the tools we need to build remote and hybrid company culture in 2023?
+            </strong></h3>
+            <p>Building and maintaining a positive culture clearly has a number of advantages – from improved productivity when employees feel they are part of a team that works, to increased likelihood of attracting and retaining talent.</p>
+            <p>When teams are remote, it may become more difficult to build and maintain the interpersonal contact and communication that are needed to collaborate efficiently. Effective teamwork relies on understanding how best to use the strengths and weaknesses of individuals to ensure the right people are in the right place at the right time and that all bases are covered.</p>
+
+                <p>Technology plays a part in helping us overcome these challenges. Most organizations have gotten to grips with collaborative tools such as Zoom, Slack, Google Docs, or Microsoft Teams, which let us share documents, work collaboratively, communicate and manage projects remotely.
+            </p>
+            <p>In 2023, we will see the emergence of more immersive online working environments that come under the metaverse banner that we have heard a lot about recently. Meta (formerly Facebook) Horizons Workrooms, Microsoft Mesh, and Nvidia’s Omniverse, as well as solutions from startups such as Arthur VR, offer persistent, collaborative, and immersive environments designed to be used as virtual offices.
+            </p>
+            <p>In one poll, 30 percent of American workers who were questioned reported that they are already using virtual reality (VR) to some extent in their job, and 10 percent are working within platforms defined as "metaverse."</p>
+            <p>The huge benefit of VR and other metaverse technologies is the sense of “presence” – the feeling that you are actually in a room communicating with colleagues rather than sitting in front of a screen with hundreds of miles between you.</p>
+            <p>One example of this in action is global consulting firm Accenture’s One Accenture Park, a VR-based training and onboarding environment that all hires are expected to explore during their first days of working for the company.</p>
+        </div>
+
+
+
+    </div>
+    <footer>
+
+        <div>
+          <h2> Artical <span>Place</span></h2>
+          <p>Everything for kids world</p>
+        </div>
+        <div>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-pinterest"></i><br>
+          <P>Design by A K</P>
+    
+        </div>
+        <div>
+          <p> @2023 copyright All Rights Reserved </p>
+        </div>
+    
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

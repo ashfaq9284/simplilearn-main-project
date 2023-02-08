@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>The Five Biggest Cyber Security </title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-toggler {
+        background-color: black !important;
+    }
+
+    /* navbar */
+    .navbar {
+        height: 90px;
+        margin: -10px 0px;
+
+    }
+
+    .div {
+        background-color: rgb(255, 239, 239) ! important;
+
+    }
+
+    .nav-link {
+        color: rgb(50, 49, 49) ! important;
+        margin: 0px 12px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 0px 15px !important;
+        margin: 0px 12px !important;
+
+    }
+
+    .nav-link:hover {
+        border: 2px solid rgb(239, 227, 227);
+        background-color: rgb(251, 148, 148);
+        color: white !important;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -ms-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .dropdown-item {
+        color: var(--primary) !important;
+        background-color: azure;
+    }
+
+    .imgs {
+        border: 2px solid white;
+        border-radius: 12px;
+        width: 200px;
+        height: 70px !important;
+
+
+    }
+
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+
+    h1:hover {
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    strong {
+        color: beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    strong:hover {
+        color: black;
+        background-color: beige;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer div {
+        flex-basis: 30% !important;
+    }
+
+    footer h2 {
+        letter-spacing: 0.5rem !important;
+        padding: 10px 0px !important;
+        color: gold;
+    }
+
+    footer h2 span {
+        color: white;
+    }
+
+    footer i {
+        padding: 15px 10px !important;
+        cursor: pointer !important;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">The Five Biggest Cyber Security Trends In 2022 </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>5 January 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p>The changed world we’ve found ourselves living in since the global pandemic struck in 2020 has been particularly helpful to cybercriminals. Nothing illustrates this so well as the SolarWinds hack, described by Microsoft president Brad Smith as the most sophisticated cyberattack of all time, the reverberations of which have been felt throughout 2021.
+
+            </p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/9.jpg" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>Homeworking, the ongoing digitization of society, and the increasingly online nature of our lives mean opportunities about for phishers, hackers, scammers, and extortionists. As we head into 2022, there is, unfortunately, no sign of this letting up. This is why it's essential for individuals and businesses to be aware of the ever-growing avenues of attack as well as what can be done to mitigate the risks! </p>
+            <p>So let’s take a look at the most important and significant trends affecting our online security in the next year and beyond while throwing in some practical steps we can all take to avoid becoming victims:
+            </p>
+            <h3><strong>AI-powered cybersecurity-</strong></h3>
+            <p>Similar to the way in which it is used in financial services for fraud detection, artificial intelligence (AI) can counteract cybercrime by identifying patterns of behavior that signify something out-of-the-ordinary may be taking place. Crucially, AI means this can be done in systems that need to cope with thousands of events taking place every second, which is typically where cybercriminals will try to strike.
+
+            </p>
+            <p>It's the predictive powers of AI that make it so useful here, which is why more and more companies will be investing in these solutions as we go into 2022. Unfortunately, cybercriminals are also aware of the benefits of AI, and new threats are emerging that use technologies like machine learning to evade the protective measures of cybersecurity. This makes AI even more essential – as it’s the only hope of counteracting AI-powered cyber-attacks!
+            </p>
+            <p>Research by Capgemini recently found two-thirds of businesses now believe AI is necessary to identifying and countering critical cybersecurity threats, and nearly three-quarters of businesses are using or testing AI for this purpose.
+            </p>
+
+            <h3><strong>The growing threat of ransomware-</strong></h3>
+            <p>According to the UK National Cyber Security Centre, there were three times as many ransomware attacks in the first quarter of 2021 as there were in the whole of 2019. And research by PwC suggests that 61% of technology executives expect this to increase in 2022. Once again, we can largely blame this on the pandemic, and the growth in the amount of activity carried out online and in digital environments.
+                </p>
+            <p>Ransomware typically involves infecting devices with a virus that locks files away behind unbreakable cryptography and threatens to destroy them unless a ransom is paid, usually in the form of untraceable cryptocurrency. Alternatively, the software virus may threaten to publish the data publicly, leaving the organization liable to enormous fines.
+            </p>
+            <p>CRansomware is typically deployed through phishing attacks – where employees of an organization are tricked into providing details or clicking a link that downloads the ransomware software (sometimes called malware) onto a computer. However, more recently, a direct infection via USB devices by people who have physical access to machines is becoming increasingly common. Worryingly there has been an increase in these types of attacks targeting critical infrastructure, including one at a water treatment facility that briefly managed to alter the chemical operations of the facility in a way that could endanger lives. Other ransomware attacks have targeted gas pipelines and hospitals.
+
+            </p>
+            <p>Education is the most effective method of tackling this threat, with research showing that employees who are aware of the dangers of this type of attack are eight times less likely to fall victim.
+            </p>
+            <h3><strong>The Internet of Vulnerable Things-</strong></h3>
+            <p> The number of connected devices – known as the internet of things (IoT) is forecast to reach 18 billion by 2022. One consequence of this is a hugely increased number of potential access points for cybercriminals looking to gain access to secure digital systems.
+            </p>
+            <p>The IoT has long been recognised as a specific threat – attacks that have been identified in the past include hackers using connected household appliances like fridges and kettles to get access to networks, and from there go on to access computers or phones where valuable data could be stored.
+            </p>
+            <p>As well as more widespread, in 2022 the IoT is also getting more sophisticated. Many organizations are now engaged in the development of "digital twins” – comprehensive digital simulations of entire systems or even businesses. These models are often connected to operational systems in order to model data gathered by them and may offer a treasure trove of data and access points to those with nefarious intentions.
+            </p>
+            <p>In 2022 we will undoubtedly continue to see attacks on IoT devices increase. Edge computing devices – where data is operated on as close as possible to the point it is collected – as well as centralized cloud infrastructure is all vulnerable. Once again, education and awareness are two of the most useful tools when it comes to protecting against these vulnerabilities. Any cybersecurity strategy should always include a thorough audit of every device that can be connected or given access to a network and a full understanding of any vulnerabilities it may pose.
+
+            </p>
+
+            <h3><strong>Cyber-security risk and exposure a key factor in partnership decisions-</strong></h3>
+            <p>Any cybersecurity operation is only as secure as its weakest link, which means organizations increasingly see every link in a supply chain as a potential vulnerability. Due to this, businesses will increasingly use cybersecurity resilience and exposure as a determining factor in choosing who they will partner with.
+            </p>
+            <p>This is borne out by Gartner's research which predicts that, by 2025, 60% of organizations with use cybersecurity risk as a "primary determinant” when choosing who to conduct business with.
+            </p>
+            <p>With more legislation following in the wake of the European General Data Protection Regulation (GDPR), such as the Chinese Personal Information Protection Law and the Californian Consumer Privacy Act, more organizations are at risk of potentially huge penalties if they make information security slip-ups. This means every partner that potentially has access to an organization's data or systems will be rigorously vetted. Businesses that aren’t able to answer questions about their cybersecurity arrangements or ratings will increasingly find themselves out in the cold. In fact, Garner predicts that industry-standard security rating schemes like SecurityScorecard, Black Kite, or UpGuard will become as important to companies as credit rating agencies.
+
+            </p>
+            <h3><strong>Regulation starting to catch up with risk-</strong></h3>
+            <p>For years, cybercriminals have acted with the knowledge that understanding – let alone policing – of their activities is weak due to the fast-changing nature of technology. With the cost of cybercrime to global economies set to top $6 trillion in 2021, this isn’t a situation that is sustainable. According to Security Magazine, 2022 is set to be the year when regulators pull out the stops in order to get on top of the situation. One consequence of this could be an expansion of penalties that currently only cover breach and loss to also cover vulnerabilities and exposure to potential damage. Another may be an increasing number of jurisdictions passing laws relating to making payments in response to ransomware attacks. We could also see a growing number of legal obligations handed to Chief Information Security Officers, in line with the responsibilities of Chief Financial Officers, in an attempt to limit the impact of data thefts, losses, and breaches on customers.
+
+            </p>
+            <p>While this will inevitably increase the burden of those responsible for information security in businesses, in the long term, this will only be a good thing. Today, more than ever, building consumer trust is essential for organizations that want us to give them the privilege of access to our valuable personal information.
+
+            </p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div>
+            <h2> Artical <span>Place</span></h2>
+            <p>Everything for kids world</p>
+        </div>
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i><br>
+            <P>Design by A K</P>
+
+        </div>
+        <div>
+            <p> @2023 copyright All Rights Reserved </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

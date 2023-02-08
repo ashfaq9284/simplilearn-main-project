@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@200&family=Roboto:wght@100;300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <title>NewsLetter</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+      <div class="container-fluid div">
+        <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-danger"></span>
+        </button>
+        <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Article</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About </a></li>
+                <li><a class="dropdown-item" href="#">Books</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+          </ul>
+          <div class="d-flex">
+            <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Login</a>
+            <a class="nav-link" href="/New folder/Registration.html">Registration</a>
+          </div>
+          <div class="d-flex">
+
+            <a class="nav-link" href="/New folder/Uploadfile.html">Upload Articals</a>
+          </div>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-auto">
+                <label for="staticEmail2" class="visually-hidden">Email</label>
+                <input type="text" class="form-control" id="staticEmail2" placeholder="email@example.com">
+              </div>
+              <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Imeges/other/B1.jpg" class="d-block " alt="...">
+          <div class="carousel-caption  d-none d-md-block">
+            <h4>NewsLetter</h4>
+            <p class="pra"> <span class="span">Artical</span> Place is one of the world's most succceful social media
+              Influencers at the intersection of business and technology </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imeges/other/B2.webp" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>NewsLetter</h4>
+            <p class="pra"><span class="1">Artical</span> Place is one of the world's most succceful social media
+              Influencers at the intersection of business and technology </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imeges/other/B3.jpg" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>NewsLetter</h4>
+            <p class="pra"><span class="1">Artical</span> Place is one of the world's most succceful social media
+              Influencers at the intersection of business and technology </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imeges/other/B4.webp" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>NewsLetter</h4>
+            <p class="pra"><span class="1">Artical</span> Place is one of the world's most succceful social media
+              Influencers at the intersection of business and technology </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imeges/bg/bg4.jpeg" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>NewsLetter</h4>
+            <p class="pra"><span class="1">Artical</span> Place is one of the world's most succceful social media
+              Influencers at the intersection of business and technology </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imeges/bg/bg1.jpeg" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>NewsLetter</h4>
+            <p class="pra"><span class="1">Artical</span> Place is one of the world's most succceful social media
+              Influencers at the intersection of business and technology </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <div class="product-intro" data-aos="fade-up-right" data-aos-offset="200">
+    <h1>Artical</h1>
+    <p class=" text-dark fs-4 ">Read the interesting Artical and enjoy your day </p>
+  </div>
+  <div class=" artical-menu" >
+    <nav class=" nav justify-content-center "  data-aos="flip-left" data-aos-offset="200">
+      <a class="nav-link " aria-current="page" href="#">All</a>
+      <a class="nav-link" href="#">intresting</a>
+      <a class="nav-link" href="#">NewsLetter</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </nav>
+  </div>
+  <section>
+
+    <div class="container-fluid">
+      <div>
+        <div class="div">
+          <div>
+            <div>
+              <div class="row  Newsletters">
+                
+                  <div class="col-md-3 col-sm-6 mb-4 Articals" data-aos="fade-up" >
+                    <div class="card">
+                      <img src="/Imeges/other/news/client/0.webp" class="card-img-top" alt="network error">
+                      <div class="card-body">
+                        <h5 class="card-title ">Banking In The Metaverse – The Next Frontier For Financial Services</h5>
+                        <p class="card-text">Banks have long known that if they can capture the attention of customers
+                          when they are young, they are likely to get hold of them for life..</p>
+                        <a href="index1.html" class=" button btn btn-primary"> Read more</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 mb-4 ml-2 Articals"data-aos="fade-up">
+                    <div class="card">
+                      <img src="/Imeges/other/news/client/1.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">The 7 Biggest Business Challenges Every Company Is Facing In 2023</h5>
+                        <p class="card-text">In this article, we look at the seven biggest challenges businesses will be
+                          facing in 2023.We discuss challenges in relation to the economy[...]</p>
+                        <a href="index2.html" class="btn btn-primary">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                    <div class="card">
+                      <img src="/Imeges/other/news/client/2.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Is This The Downfall Of Meta And Social Media As We Know It?
+                        </h5>
+                        <p class="card-text">Meta Platforms – the company formerly known as Facebook – is cutting its
+                          workforce by 13% – equating to a loss of 11,000 jobs.</p>
+                        <a href="index3.html" class="btn btn-primary">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                    <div class="card">
+                      <img src="/Imeges/other/news/client/3.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">How To Build A Positive Hybrid And Remote Working Culture In 2023</h5>
+                        <p class="card-text">In 2023, building a culture that allows a business and its employees to
+                          thrive while working remotely is about more than surviving .[...]</p>
+                        <a href="index4.html" class="btn btn-primary">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                
+
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tim Cook Says The Metaverse Isn’t The Future Because People Don’</h5>
+                      <p class="card-text">It seems like everyone has spent the last year or so falling over themselves
+                        to tell us what the metaverse </p>
+                      <a href="index5.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/5.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Top 4 Telecom Trends In 2023</h5>
+                      <p class="card-text">The next 12 months look set to be a bumpy year for many global markets, and
+                        communications service providers (CSPs) will not be entirely insulated from the volatility.[...]
+                      </p>
+                      <a href="index6.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Amazing Possibilities Of Healthcare In The Metaverse</h5>
+                      <p class="card-text">The metaverse is a hot topic at the moment, and much has been written and
+                        spoken about its potential to revolutionize gaming, entertainment,.</p>
+                      <a href="index7.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">What Is Social Media 2.0? Simple Explanation And Examples</h5>
+                      <p class="card-text">Social media has been a part of most of our lives now for more than two
+                        decades. The first social sites like Classmates and Myspace .</p>
+                      <a href="index8.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The 2 Biggest Future Trends In Education</h5>
+                      <p class="card-text">Our world is changing fast. The pace of change, particularly when it comes to
+                        new technologies, means the half-life of skills is shrinking fast.[...]</p>
+                      <a href="index9.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Five Biggest Cyber Security Trends In 2022</h5>
+                      <p class="card-text">The changed world we’ve found ourselves living in since the global pandemic
+                        struck in 2020 has been particularly helpful to cybercriminals.[...]</p>
+                      <a href="index10.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">10 Skills Robots Can’t Replace In The Workplace (Yet)</h5>
+                      <p class="card-text">Machines can now do many things we would have deemed impossible a few decades
+                        ago – but there are still human skills robots can’t yet replace.[...]</p>
+                      <a href="index11.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 Articals"data-aos="fade-up">
+                  <div class="card">
+                    <img src="/Imeges/other/news/client/11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">What You Need To Know Before You Start Working With Artificial Intelligence
+                      </h5>
+                      <p class="card-text">It seems like everyone is talking about artificial intelligence at the moment
+                        and there’s good reason for that. We are seeing its revolutionary.[..]</p>
+                      <a href="index12.html" class="btn btn-primary" 5>Read more</a>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class=" Main-artical container-fluid" data-aos="fade-down" data-aos-offset="300">
+        <h1>Top 4 <span> Artical</span></h1>
+        <p class=" text-dark fs-4 ">Read top 4 Artical and enjoy your day </p>
+      </div>
+
+      <div class=" row">
+        <div class="col-md-3 col-sm-6 mb-4 ml-2">
+          <div class="card">
+            <img src="/Imeges/other/news/top trend/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Human Vs. Artificial Intelligence: Why Finding The Right Balance Is Key To Success
+              </h5>
+              <p class="card-text">Welcome to the age of blended workforces, where intelligent machines and humans </p>
+              <a href="index13.html" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 ml-2">
+          <div class="card">
+            <img src="/Imeges/other/news/top trend/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">How Artificial Intelligence Can Help Identify and Treat Cancer</h5>
+              <p class="card-text">The integration of artificial intelligence (AI) into pathology and oncology is now
+                helping doctors detect, manage[...]
+
+              </p>
+              <a href="/New folder/index14.html" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 ml-2">
+          <div class="card">
+            <img src="/Imeges/other/news/top trend/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Five Biggest Marketing Tech Trends In 2022</h5>
+              <p class="card-text">In 2022, the ongoing global pandemic has continued to accelerate the uptake of
+                digital and cloud technology in every business function.[...]</p>
+              <a href="/New folder/index15.html " class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 ml-2">
+          <div class="card">
+            <img src="/Imeges/other/news/top trend/4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The 5 Technologies That Will Change The Future Of The Human Race</h5>
+              <p class="card-text">In my book, Tech Trends in Practice, I talk about a lot of technology trends that are
+                already moving out of the R&D departments and into everyday life[...]</p>
+              <a href="/New folder/index16.html" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Trends">
+      <div class="container-fluid">
+        <div class="product-intro">
+          <h1>Best <span>Writer</span></h1>
+
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/Imeges/other/news/top trend/Courtney J.webp">
+              <h4 class="d-flex text-center justify-content-center">Courtney J</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="/Imeges/other/news/top trend/Marisa E.webp">
+              <h4 class="d-flex text-center justify-content-center">Marisa E</h4>
+
+            </div>
+            <div class="swiper-slide">
+              <img src="/Imeges/other/news/top trend/Sead F.webp">
+              <h4 class="d-flex text-center justify-content-center">Sead F</h4>
+
+            </div>
+            <div class="swiper-slide">
+              <img src="/Imeges/other/news/top trend/Tarah Swebp.webp">
+              <h4 class="d-flex text-center justify-content-center">Tarah Swebp</h4>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+      <a class="anker" href="#"><span>About Us</span></a>
+    </div>
+    <div class="container-fluid">
+      <div>
+        <div class="accordion-item  ">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed text-white bg-primary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              1
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+
+              <p>The best newsletter introductions are personal and make the reader feel like they are part of a
+                community. A good way to start a newsletter introduction is by telling a story that is personal to you
+                and relatable to your reader. This will make your newsletter seem more like a conversation rather than a
+                one-sided broadcast message.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed text-white bg-primary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              2
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <p>A newsletter is a printed or electronic report containing news concerning the activities of a business
+                or an organization that is sent to its members, customers, employees or other subscribers. Newsletters
+                generally contain one main topic of interest to its recipients. A newsletter may be considered grey
+                literature. E-newsletters are delivered electronically via e-mail and can be viewed as spamming if
+                e-mail marketing is sent unsolicited</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer>
+
+    <div>
+      <h1>Apni <span>Dukan</span></h1>
+      <p>Everything for kids world</p>
+    </div>
+    <div>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-whatsapp"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-pinterest"></i><br>
+      <P>Design by Ashfaq khatik</P>
+
+    </div>
+    <div>
+      <p> @2023 copyright All Rights Reserved </p>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+</body>
+
+</html>

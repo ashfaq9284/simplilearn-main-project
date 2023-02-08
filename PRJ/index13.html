@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Human Vs. Artificial Intelligence </title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-toggler {
+        background-color: black !important;
+    }
+
+    /* navbar */
+    .navbar {
+        height: 90px;
+        margin: -10px 0px;
+
+    }
+
+    .div {
+        background-color: rgb(255, 239, 239) ! important;
+
+    }
+
+    .nav-link {
+        color: rgb(50, 49, 49) ! important;
+        margin: 0px 12px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 0px 15px !important;
+        margin: 0px 12px !important;
+
+    }
+
+    .nav-link:hover {
+        border: 2px solid rgb(239, 227, 227);
+        background-color: rgb(251, 148, 148);
+        color: white !important;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -ms-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .dropdown-item {
+        color: var(--primary) !important;
+        background-color: azure;
+    }
+
+    .imgs {
+        border: 2px solid white;
+        border-radius: 12px;
+        width: 200px;
+        height: 70px !important;
+
+
+    }
+
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+
+    h1:hover {
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    strong {
+        color: beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    strong:hover {
+        color: black;
+        background-color: beige;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer div {
+        flex-basis: 30% !important;
+    }
+
+    footer h2 {
+        letter-spacing: 0.5rem !important;
+        padding: 10px 0px !important;
+        color: gold;
+    }
+
+    footer h2 span {
+        color: white;
+    }
+
+    footer i {
+        padding: 15px 10px !important;
+        cursor: pointer !important;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">Human Vs. Artificial Intelligence: Why Finding The Right Balance Is Key To Success
+            </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>6 June 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p> Welcome to the age of blended workforces, where intelligent machines and humans combine to accelerate business success.
+
+            </p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/top trend/1.jpg" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>In short, now that we have increasingly capable robots and artificial intelligence (AI) systems – capable of taking on tasks that were previously the sole domain of humans – it’s easier than ever for organizations to leverage intelligent machines. But this leaves employers with some major questions to answer: how do we find the right balance between intelligent machines and human intelligence? What roles should be given over to machines? And which roles are best suited to humans?
+            </p>
+            <h3><strong>The first step: Understanding what machines can do-</strong></h3>
+            <p>Particularly in traditional companies, business leaders often aren’t up to speed on the sheer range of tasks that today’s AIs and intelligent robots can take on. (In fact, I spend a lot of time educating executives in this area.) This knowledge is key to finding the right balance between humans and machines in your organization.
+
+            </p>
+            <p>Some of the things AIs and AI-enabled robots can do are pretty mind-blowing. For example, AIs can now read, write, see, speak and even understand emotions. While this sounds impressive, AIs are, for the most part, taking one type of input (be it visual data, written data, or whatever) and generating a particular output, as programmed. Once you understand this basic input-to-output idea, there’s potential to automate all sorts of tasks that follow this same model, such as scanning security videos for suspicious behavior, moderating content online, answering simple customer inquiries, entering data, and maintaining bookkeeping records, and so on.
+            </p>
+            <p>As Stanford professor Andrew NG puts it, “If a typical person can do a mental task with less than one second of thought, we can probably automate it using AI either now or in the near future.” In other words, human jobs that are built on some sort of input-to-output scenario are very likely to be automated in the future.
+            </p>
+            <h3><strong>So what will happen to human workers?-</strong></h3>
+            <p>In light of this incoming wave of automation, the work of humans will be affected in three key ways:
+                <ul>
+                    <li><strong>Displacement of human jobs.</strong> According to the World Economic Forum’s Future of Jobs Report 2020, 85 million jobs may be displaced by automation by 2025 – truly a staggering figure. Naturally, this creates a lot of fear around automation. But while many jobs will be displaced, it’s important to note that even more jobs will be augmented or created because of technology adoption. Which brings us to…</li>
+                    <li><strong>Augmentation of human jobs.</strong> Here, many jobs will be changed in some way by automation. According to the WEF, by 2025, the time spent on current tasks at work by humans and machines will be equal. This means employers must find the perfect balance between those tasks done by humans and those done by machines. To put it another way, we need to ensure the work given to machines is best suited to machines, and the work given to humans is best suited to humans (so humans don’t end up feeling like machines).</li>
+                    <li><strong>Addition of new human jobs.</strong>Finally, new jobs will arise that previously did not exist. While the WEF estimates that 85 million jobs may be displaced, it also estimates that 97 million new roles may emerge – roles that are better adapted to the new division of labor between humans and machines. These new human roles are likely to rely on a slightly different set of skills and capabilities, compared to those skills that have traditionally been prioritized in the past.</li>
+                </ul>
+            </p>
+            <p>All this means employers have a responsibility to equip their workforces with the skills needed for the fourth industrial revolution. What sort of skills are we talking about? Well, with machines taking on more of the easily automated input-to-output work, it’s the inherently human skills that will become more and more valuable in the workplace. Things like empathy, creativity, critical thinking, emotional intelligence, communication, and complex decision making, to name just a few.
+            </p>
+            <h3><strong>“Responsible automation” in practice-</strong></h3>
+            <p>Stitch Fix is a fashion subscription box that uses AI to pick out clothes that customers will love. But the company doesn’t just rely on AI to do this; it’s the perfect blend of AI and human stylists that makes the service so impressive.
+            </p>
+            <p>OAt Stitch Fix, machines do the initial work of crunching through enormous amounts of data and evaluating the likelihood of a customer loving a particular style, based on the customer’s information, preferences and previous choices. Then a human stylist finalizes the selection and writes a personal note advising the client on how to style the items.
+            </p>
+            <p>For me, this is a fantastic example of getting the best out of both machines and humans, and it’s something many organizations could learn from. This perfect symbiosis between intelligent machines and capable humans is referred to by automation pioneers Faethm as “responsible automation.” Faethm is on a mission to ensure automation is done in a way that doesn’t leave humans behind, and the company’s approach involves breaking jobs down into task fractions to see what can and can’t be automated. Done this way, automation – at least according to Faethm – doesn’t have to result in job losses. Instead, humans transition to more rewarding tasks.
+
+            </p>
+            <p>The key takeaway here is that organizations must start to identify the tasks that are better suited to machines so that those tasks can be automated, leaving humans to do the more complex, rewarding work. And on top of this, employers must equip their workforces with the skills that will be essential for success in the 21st century.
+
+            </p>
+
+            <h3><strong> 4. Accelerated Digital Transformation:-</strong></h3>
+            <p>Artificial intelligence (AI) is already starting to augment all of our businesses, and that trend will
+                continue to accelerate next year. At the same time, other technologies like 5G, blockchain, the cloud,
+                and the Internet of Things (IoT) are building and speeding up AI, and all of them are enhancing each
+                other.
+
+            </p>
+            <p>This is rapidly creating a world of ever-faster technological developments. In response, every business
+                must think of itself as a tech business. Companies need to re-design their processes and ensure their
+                people have the skills needed for a world where we increasingly collaborate with and work alongside
+                capable and intelligent machines.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div>
+            <h2> Artical <span>Place</span></h2>
+            <p>Everything for kids world</p>
+        </div>
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i><br>
+            <P>Design by A K</P>
+
+        </div>
+        <div>
+            <p> @2023 copyright All Rights Reserved </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

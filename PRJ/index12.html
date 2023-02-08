@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata:wght@200&family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Artificial Intelligence </title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+    }
+
+    /* body */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-toggler {
+        background-color: black !important;
+    }
+
+    /* navbar */
+    .navbar {
+        height: 90px;
+        margin: -10px 0px;
+
+    }
+
+    .div {
+        background-color: rgb(255, 239, 239) ! important;
+
+    }
+
+    .nav-link {
+        color: rgb(50, 49, 49) ! important;
+        margin: 0px 12px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 0px 15px !important;
+        margin: 0px 12px !important;
+
+    }
+
+    .nav-link:hover {
+        border: 2px solid rgb(239, 227, 227);
+        background-color: rgb(251, 148, 148);
+        color: white !important;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -ms-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .dropdown-item {
+        color: var(--primary) !important;
+        background-color: azure;
+    }
+
+    .imgs {
+        border: 2px solid white;
+        border-radius: 12px;
+        width: 200px;
+        height: 70px !important;
+
+
+    }
+
+    #div1 {
+        width: 85% !important;
+    }
+
+    /* h1 style */
+    h1 {
+        color: rgb(252, 162, 162);
+        background-color: black;
+        margin: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+        margin: 85px 0px;
+        padding: 5px 10px;
+    }
+
+    h1:hover {
+        background-color: rgb(252, 162, 162);
+        color: black;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    img {
+        width: 95%;
+        height: 65vh !important;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    strong {
+        color: beige;
+        background-color: rgb(245, 121, 121);
+        padding: 5px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    strong:hover {
+        color: black;
+        background-color: beige;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer div {
+        flex-basis: 30% !important;
+    }
+
+    footer h2 {
+        letter-spacing: 0.5rem !important;
+        padding: 10px 0px !important;
+        color: gold;
+    }
+
+    footer h2 span {
+        color: white;
+    }
+
+    footer i {
+        padding: 15px 10px !important;
+        cursor: pointer !important;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-expand-lg  navbar-dark  fixed-top ">
+            <div class="container-fluid div">
+                <a class="navbar-brand " href="#"><img class="imgs" src="/Imeges/bg/bg2.jpeg" alt=""></a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent bg-danger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-danger"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dange " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-danger">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About </a></li>
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex">
+                        <a style="cursor:pointer;" class="nav-link  me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login</a>
+                        <a class="nav-link" href="#">Registration</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control" id="staticEmail2"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="div1" class="container-fluid div1">
+        <div class="fusion-title title fusion-title-5 fusion-sep-none fusion-title-text fusion-title-size-one
+                margin-top:10px;margin-right:0px;margin-bottom:15px;margin-left:0px;">
+            <h1 id="heading " class="title-heading-left margin:0">What You Need To Know Before You Start Working With Artificial Intelligence </h1>
+        </div>
+        <div class="fusion-text fusion-text-7">
+            <p>16 May 2022</p>
+        </div>
+        <hr>
+        <div class="fusion-text fusion-text-8">
+            <p>It seems like everyone is talking about artificial intelligence at the moment, and there’s good reason for that. We are seeing its revolutionary impact across just about every industry:
+                <ul>
+                    <li>In healthcare, where it’s used to track pandemics and develop vaccines. </li>
+                <li>In banking and finance, where it detects fraudulent transactions and enables more accurate assessments of lending risks.
+                </li>
+                <li>In security, where it prevents cyberattacks and data breaches.
+                </li>
+                <li>In biotechnology, where it augments advances made in fields such as gene editing, promising to help eradicate diseases and put an end to food shortages.
+                </li>
+                <li>In retail, where it predicts what customers are likely to buy, and puts them in front of them at the time they’re ready to pull the trigger.
+                </li></ul>
+            </p>
+        </div>
+        <div class="container-fluid  ">
+            <img src="/Imeges/other/news/client/11.jpg" class="img-fluid " alt="">
+        </div>
+        <div class="fusion-text fusion-text-9">
+            <p>I firmly believe that the true value of AI – estimated to be worth $13 trillion to the global economy by 2030 – will be realized due to it being accessible to businesses of all shapes and sizes, not just multinational corporations. A vast and eclectic ecosystem of cloud-based, “as-a-service” platforms reduces the need for expensive infrastructure investments and also means that niche solutions exist to help automate solutions in every industry.
+            <p>But whether you’re simply looking to use AI-augmented marketing tools or to implement machine learning and real-time data analytics from top to bottom of your organization, there are some important points to consider first. The cost of deploying AI may have fallen dramatically in the last decade, but it still requires an investment of time and money, and going into it half-cocked – simply because it seems like everyone else is doing it, and you have a fear of missing out – can be a recipe for an expensive disaster.
+            </p>
+            <h3><strong>Strategy First -</strong></h3>
+            <p>The first principle is to start with a strategy. Simply put, this means understanding what you are trying to achieve. AI technologies are tools that are deployed tactically to achieve strategic objectives. Your strategy should be in line with your business objectives – are you aiming for growth? Improving customer retention or lifetime value? Or to reduce overheads involved with design, manufacturing, distribution, or after-sales service? Once you know what you want to achieve, then you can start looking for AI technologies – such as machine learning, computer vision, or natural language processing - that can help you get the job done. I like to start by thinking of the key questions a business needs to answer to be able to hit its targets. Who wants to buy our products or services, or how can we improve the value customers get from dealing with us? Remember, always fit technology to a problem, rather than problems to the technology!
+
+            </p>
+           
+            <h3><strong>What data do I need?-</strong></h3>
+            <p>Once you know what your problems are, start thinking about the information you need to answer questions and get them solved. Data might be internal, such as records of customer transactions and interactions, or external, such as information on demographic trends, behavioral data from social media, or publicly available government data. Data can also be structured – neat, tidy data that fits into spreadsheets such as statistical data or website clickstream data, or unstructured – messy but potentially highly valuable data such as images, videos, speech recordings, or written text. The most advanced AI projects often work with real-time streaming data. This gives us up-to-the minute insights that can be acted on immediately.
+
+            </p>
+          
+            <h3><strong>What infrastructure do I need?-</strong></h3>
+            <p>Building AI infrastructure doesn’t necessarily mean creating algorithms from scratch, big data storage solutions, and a complicated systems architecture process. Cloud providers give companies of any size access to pay-as-you-go storage and AI compute solutions, as well as consulting expertise to get them up and running. Nevertheless, it’s still important to understand the range of services and solutions available in your market. Will a public cloud provider give you everything you need? Particularly if you’re interested in working with very sensitive personal data, you may need to consider on-premises or hybrid infrastructure at some level, which gives you more direct control over your information.
+
+
+            </p>
+           
+            <h3><strong> What governance issues will I face?-</strong></h3>
+            <p>Working with data brings legal as well as moral and ethical obligations. Legislation is tightening around companies involved with collecting and processing personal information from their customers or the wider public, a good example of this is the European Union GDPR, introduced in 2018. The law (and others like it, such as the California Consumer Privacy Act) oblige businesses that collect personal data to operate within a robust legal framework or face harsh financial penalties. Governance also encompasses the ethical and moral questions that need to be addressed when applying technology in ways that might affect people’s lives. In the information age, trust is essential – if customers don’t trust you with their data, your plans are thwarted before you even start. This means you have to be able to demonstrate that everything you’re doing is governed by a strong code of ethics.
+
+
+            </p>
+            <h3><strong>What skills will I need? -</strong></h3>
+            <p>There's no getting away from it; we are in the middle of an AI skills crisis. What that means is that industry is coming up with ideas for using AI quicker than colleges and universities can churn out graduates with the skills to bring these ideas to life. People with AI engineering talents are hot property on the jobs market, and their salaries reflect that. But AI doesn’t build itself (quiet) yet, so you're going to need human skills. They can be acquired either by hiring them in (which, as mentioned, can be expensive) or by upskilling existing workforces. Another option is to partner with outside agencies, such as consultants. The approach you choose will depend to a large extent on the scale of your AI ambitions and the resources you have available.
+
+            </p>
+            <h3><strong>Do you have a data-driven culture?-</strong></h3>
+            <p>To some extent, this is all about attitude. What is the attitude, at all levels, towards technology, data, and AI-driven innovation in your organization? In a data-driven business culture, everyone from the boardroom to the shop floor understands the advantages that can be achieved by putting data at the heart of operations and decision-making. This certainly isn’t true of all organizations. Some not-exactly-helpful attitudes that are still prevalent in business include "We aren't ready to be an AI company," "AI is too expensive or complicated," "We know our business better than a machine ever will”, or “Our customers aren’t interested in us becoming an AI company.” There may be good reasons for all of these attitudes, but too often, they are grounded in a fear of the unknown or an unwillingness to move away from a methodology that’s been successful in the past - even when it’s clearly becoming less successful as the world becomes increasingly digitized. The fact is, you can never know enough about your customers. You can never stop looking for ways to drive efficiency across your operations. And you can never stop making your products smarter and more useful. For almost any business, AI is the key to making these things happen.
+
+            </p>
+            <p>Of course, this article only scratches the surface of what you need to know before you start working with AI. But all of these topics (and many more) are covered in-depth in the new edition of my book, Data Strategy: How to Profit From A World of Big Data, Analytics And Artificial Intelligence.
+
+            </p>
+           
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div>
+            <h2> Artical <span>Place</span></h2>
+            <p>Everything for kids world</p>
+        </div>
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i><br>
+            <P>Design by A K</P>
+
+        </div>
+        <div>
+            <p> @2023 copyright All Rights Reserved </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
